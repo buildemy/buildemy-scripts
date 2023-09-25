@@ -15,7 +15,7 @@ var request = new XMLHttpRequest()
 var data;
 
 // Open a new connection, using the GET request on the URL endpoint
-request.open('GET', current_url + '/create_course_my_academies_webflow', true)
+request.open('GET', current_url + '/teacher/get_all_academies/', true)
 request.onload = function () {
     // Begin accessing JSON data here
     data = JSON.parse(this.response)
